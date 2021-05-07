@@ -14,7 +14,6 @@ html {
 }
 
 #calculator {
-  min-width: 280px;
   width: 370px;
   background-color: #18191A;
   height: 575px;
@@ -23,16 +22,16 @@ html {
   justify-content: center;
   border-radius: 5px;
   @media only screen and (max-width: $responsive){
-    width: 300px !important;
-    height: 490px !important;
+    width: 300px;
+    height: 490px;
       }
   @media only screen and (min-width: $responsive) and (max-width: $phone){
-    width: 300px !important;
-    height: 490px !important;
+    width: 300px;
+    height: 490px;
       }
   @media only screen and (orientation: landscape) and (min-width: $phone) and (max-width: $phoneLandscape) {
-    width: 280px !important;
-    height: 360px !important;
+    width: 280px;
+    height: 360px;
       }
 }
 #calcKeys {

@@ -32,6 +32,7 @@ html {
 @media screen and (min-width: 320px) and (max-width: 400px) {
   #calculator {
     width: 300px;
+    height: 490px;
   }
 }
 
@@ -91,6 +92,14 @@ html {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  #display {
+    width: 269px;
+    margin-bottom: -11px;
+    margin-top: 12px;
+  }
+}
+
 #zero {
   width: 156px;
 }
@@ -105,6 +114,12 @@ html {
   #zero {
     width: 126px;
     height: 45px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  #zero {
+    width: 135px;
   }
 }
 
@@ -129,6 +144,13 @@ html {
   #clear {
     width: 192px;
     height: 45px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  #clear {
+    width: 207px;
+    height: 65px;
   }
 }
 
@@ -170,6 +192,13 @@ html {
   .buttons {
     width: 60px;
     height: 45px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .buttons {
+    width: 65px;
+    height: 65px;
   }
 }
 

@@ -1,0 +1,102 @@
+html {
+  background-color: gray;
+  margin: 0;
+}
+
+#app {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#calculator {
+  width: 370px;
+  background-color: #18191A;
+  height: 575px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+#calcKeys {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#display {
+  width: 310px;
+  height: 100px;
+  background-color: #79834B;
+  font-size: 50px;
+  margin-top: 25px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  border-radius: 5px;
+  color: #242526;
+}
+
+#zero {
+  width: 156px;
+}
+
+#clear {
+  width: 237px;
+  height: 75px;
+  background-color: orange;
+}
+
+#clear:hover {
+  background: #b37400;
+}
+
+.buttons {
+  margin: 3px;
+  font-size: 40px;
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+}
+
+.buttons:hover {
+  background: #c2c2c2;
+}
+
+.buttons:focus {
+  background: darkgray;
+}
+
+.operators {
+  background-color: gray;
+}
+
+.operators:hover {
+  background: #5a5a5a;
+}
+
+.operators:focus {
+  background: #4d4d4d;
+}
+/*# sourceMappingURL=App.css.map */

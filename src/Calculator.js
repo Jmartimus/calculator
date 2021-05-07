@@ -141,7 +141,7 @@ const Calculator = () => {
   return (
     <div>
       <div id="calculator">
-        <input id="display" ref={displayRef} type="text" value="" disabled />
+        <input id="display" ref={displayRef} type="text" value="0" disabled />
         <div id="calcKeys">
           <button
             className="all-clear buttons"

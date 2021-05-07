@@ -1,19 +1,17 @@
 html {
   background-color: gray;
   margin: 0;
-}
-
-#app {
   height: 100vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #calculator {
@@ -29,6 +27,26 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  #calculator {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #calculator {
+    width: 300px;
+    height: 490px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 844px) {
+  #calculator {
+    width: 280px;
+    height: 360px;
+  }
 }
 
 #calcKeys {
@@ -56,8 +74,38 @@ html {
   color: #242526;
 }
 
+@media screen and (max-width: 320px) {
+  #display {
+    width: 269px;
+    margin-bottom: -11px;
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 844px) {
+  #display {
+    width: 250px;
+    height: 70px;
+    margin-bottom: -11px;
+    margin-top: 12px;
+  }
+}
+
 #zero {
   width: 156px;
+}
+
+@media screen and (max-width: 320px) {
+  #zero {
+    width: 135px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 844px) {
+  #zero {
+    width: 126px;
+    height: 45px;
+  }
 }
 
 #clear {
@@ -70,6 +118,20 @@ html {
   background: #b37400;
 }
 
+@media screen and (max-width: 320px) {
+  #clear {
+    width: 207px;
+    height: 65px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 844px) {
+  #clear {
+    width: 192px;
+    height: 45px;
+  }
+}
+
 .buttons {
   margin: 3px;
   font-size: 40px;
@@ -78,6 +140,15 @@ html {
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .buttons:hover {
@@ -86,6 +157,20 @@ html {
 
 .buttons:focus {
   background: darkgray;
+}
+
+@media screen and (max-width: 320px) {
+  .buttons {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 844px) {
+  .buttons {
+    width: 60px;
+    height: 45px;
+  }
 }
 
 .operators {
@@ -99,4 +184,4 @@ html {
 .operators:focus {
   background: #4d4d4d;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=Calculator.css.map */

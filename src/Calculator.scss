@@ -1,14 +1,17 @@
+$phone: 400px;
+$responsive: 320px;
+$phoneLandscape: 844px;
+
 html {
   background-color: gray;
   margin: 0;
-}
-#app {
   height: 100vh;
+  width: 100vw;
   display: flex;
-  align-items: center;
   justify-content: center;
-  
+  align-items: center;
 }
+
 #calculator {
   width: 370px;
   background-color: #18191A;
@@ -17,6 +20,17 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 5px;
+  @media screen and (max-width: $phone){
+    width: 300px;
+      }
+      @media screen and (max-width: $responsive){
+        width: 300px;
+        height: 490px;
+          }
+          @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+            width: 280px;
+            height: 360px;
+          }
 }
 #calcKeys {
   margin-bottom: 50px;
@@ -35,9 +49,27 @@ html {
   text-align: right;
   border-radius: 5px;
   color: #242526;
+  @media screen and (max-width: $responsive){
+    width: 269px;
+    margin-bottom: -11px;
+    margin-top: 12px;
+      }
+      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+        width: 250px;
+        height: 70px;
+        margin-bottom: -11px;
+    margin-top: 12px;
+      }
 }
 #zero {
   width: 156px;
+  @media screen and (max-width: $responsive){
+    width: 135px;
+      }
+      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+        width: 126px;
+        height: 45px;
+      }
 }
 #clear { 
   width: 237px;
@@ -46,6 +78,14 @@ html {
   &:hover {
     background: darken(orange,15%)
   }
+  @media screen and (max-width: $responsive){
+    width: 207px;
+    height: 65px;
+      }
+      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+        width: 192px;
+        height: 45px;
+      }
 }
 .buttons {
   margin: 3px;
@@ -55,12 +95,23 @@ html {
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background: darken(whitesmoke,20%)
   }
   &:focus {
     background: darken(whitesmoke,30%);
   }
+  @media screen and (max-width: $responsive){
+    width: 65px;
+    height: 65px;
+      }
+      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+        width: 60px;
+        height: 45px;
+      }
  
 }
 .operators {

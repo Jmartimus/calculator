@@ -1,17 +1,22 @@
-import React, { useRef } from 'react';
 import './Calculator.css';
+import React, { useRef } from 'react';
 
 //clean up all the conditional statements - change to ternaries and case switches?
-
 const Calculator = () => {
   let operands = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   let decimal = '.';
   let operators = ['+', '-', '*', '/', '='];
-  let clickSound =
-    'https://dight310.byu.edu/media/audio/FreeLoops.com/5/5/Mouse%20Click%20Fast.wav';
+  let clickSound = 'https://dight310.byu.edu/media/audio/FreeLoops.com/5/5/Mouse%20Click%20Fast.wav';
 
   const displayRef = useRef();
   const audioRef = useRef();
+
+  const updateDisplay = () => {
+    displayRef.current.value = calc.display;
+  };
+  const click = () => {
+    audioRef.current.src = clickSound;
+  };
 
   const calc = {
     display: '0',
@@ -41,13 +46,6 @@ const Calculator = () => {
     }
     updateDisplay();
   };
-
-  const updateDisplay = () => {
-    displayRef.current.value = calc.display;
-  }
-  const click = () => {
-    audioRef.current.src = clickSound;
-  }
 
   //handles digits
   const inputDigit = (digit) => {
@@ -81,11 +79,7 @@ const Calculator = () => {
   const handleOperator = (nextOperator) => {
     const { firstOperand, currentVal, operator } = calc;
     let inputValue = parseFloat(currentVal);
-    if (
-      operator &&
-      calc.waitingForSecondOperand &&
-      nextOperator === '-'
-    ) {
+    if (operator && calc.waitingForSecondOperand && nextOperator === '-') {
       calc.nextNumNeg = true;
       calc.display += nextOperator;
       return;
@@ -93,8 +87,7 @@ const Calculator = () => {
     if (operator && calc.waitingForSecondOperand) {
       calc.operator = nextOperator;
       if (nextOperator !== operator) {
-        calc.display =
-          calc.display.slice(0, -1) + nextOperator;
+        calc.display = calc.display.slice(0, -1) + nextOperator;
       }
       calc.nextNumNeg = false;
       return;
@@ -292,5 +285,5 @@ const Calculator = () => {
     </div>
   );
 };
+export default Calculator;
 
-export default Calculator();

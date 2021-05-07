@@ -279,7 +279,7 @@ const Calculator = () => {
           >
             =
           </button>
-          <audio ref={audioRef} autoplay="true" />
+          <audio ref={audioRef} autoPlay="true" />
         </div>
       </div>
     </div>

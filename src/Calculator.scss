@@ -20,18 +20,18 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 5px;
-  @media screen and (min-width: $responsive) and (max-width: $phone){
+  @media only screen and (max-width: $responsive){
     width: 300px;
-        height: 490px;
+    height: 490px;
       }
-      @media screen and (max-width: $responsive){
-        width: 300px;
-        height: 490px;
-          }
-          @media only screen and (orientation: landscape) and (min-width: $phone) and (max-width: $phoneLandscape) {
-            width: 280px;
-            height: 360px;
-          }
+  @media only screen and (min-width: $responsive) and (max-width: $phone){
+    width: 300px;
+    height: 490px;
+      }
+  @media only screen and (orientation: landscape) and (min-width: $phone) and (max-width: $phoneLandscape) {
+    width: 280px;
+    height: 360px;
+      }
 }
 #calcKeys {
   margin-bottom: 50px;
@@ -50,35 +50,36 @@ html {
   text-align: right;
   border-radius: 5px;
   color: #242526;
-  @media screen and (max-width: $responsive){
+  @media only screen and (max-width: $responsive){
     width: 269px;
     margin-bottom: -11px;
     margin-top: 12px;
       }
-      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
-        width: 250px;
-        height: 70px;
-        margin-bottom: -11px;
-    margin-top: 12px;
-      }
-      @media screen and (min-width: $responsive) and (max-width: $phone){
-        width: 269px;
+  @media only screen and (min-width: $responsive) and (max-width: $phone){
+    width: 269px;
     margin-bottom: -11px;
     margin-top: 12px;
-          }
+      }
+  @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+    width: 250px;
+    height: 70px;
+    margin-bottom: -11px;
+    margin-top: 12px;
+      }
 }
 #zero {
   width: 156px;
-  @media screen and (max-width: $responsive){
+  @media only screen and (max-width: $responsive){
     width: 135px;
       }
-      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
-        width: 126px;
-        height: 45px;
+  @media only screen and (min-width: $responsive) and (max-width: $phone){
+    width: 135px;
       }
-      @media screen and (min-width: $responsive) and (max-width: $phone){
-        width: 135px;
-          }
+  @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+    width: 126px;
+    height: 45px;
+      }
+      
 }
 #clear { 
   width: 237px;
@@ -87,18 +88,18 @@ html {
   &:hover {
     background: darken(orange,15%)
   }
-  @media screen and (max-width: $responsive){
+  @media only screen and (max-width: $responsive){
     width: 207px;
     height: 65px;
       }
-      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
-        width: 192px;
-        height: 45px;
+  @media only screen and (min-width: $responsive) and (max-width: $phone){
+    width: 207px;
+    height: 65px;
       }
-      @media screen and (min-width: $responsive) and (max-width: $phone){
-        width: 207px;
-        height: 65px;
-          }
+  @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+    width: 192px;
+    height: 45px;
+      }
 }
 .buttons {
   margin: 3px;
@@ -117,18 +118,18 @@ html {
   &:focus {
     background: darken(whitesmoke,30%);
   }
-  @media screen and (max-width: $responsive){
+  @media only screen and (max-width: $responsive){
     width: 65px;
     height: 65px;
       }
-      @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
-        width: 60px;
-        height: 45px;
+  @media only screen and (min-width: $responsive) and (max-width: $phone){
+    width: 65px;
+    height: 65px;
       }
-      @media screen and (min-width: $responsive) and (max-width: $phone){
-        width: 65px;
-        height: 65px;
-          }
+  @media only screen and (orientation: landscape) and (max-width: $phoneLandscape) {
+    width: 60px;
+    height: 45px;
+      }
  
 }
 .operators {

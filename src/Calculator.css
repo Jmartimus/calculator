@@ -29,14 +29,14 @@ html {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
   #calculator {
     width: 300px;
     height: 490px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 400px) {
   #calculator {
     width: 300px;
     height: 490px;
@@ -75,7 +75,15 @@ html {
   color: #242526;
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
+  #display {
+    width: 269px;
+    margin-bottom: -11px;
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
   #display {
     width: 269px;
     margin-bottom: -11px;
@@ -92,19 +100,17 @@ html {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 400px) {
-  #display {
-    width: 269px;
-    margin-bottom: -11px;
-    margin-top: 12px;
-  }
-}
-
 #zero {
   width: 156px;
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
+  #zero {
+    width: 135px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
   #zero {
     width: 135px;
   }
@@ -114,12 +120,6 @@ html {
   #zero {
     width: 126px;
     height: 45px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 400px) {
-  #zero {
-    width: 135px;
   }
 }
 
@@ -133,7 +133,14 @@ html {
   background: #b37400;
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
+  #clear {
+    width: 207px;
+    height: 65px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
   #clear {
     width: 207px;
     height: 65px;
@@ -144,13 +151,6 @@ html {
   #clear {
     width: 192px;
     height: 45px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 400px) {
-  #clear {
-    width: 207px;
-    height: 65px;
   }
 }
 
@@ -181,7 +181,14 @@ html {
   background: darkgray;
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
+  .buttons {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
   .buttons {
     width: 65px;
     height: 65px;
@@ -192,13 +199,6 @@ html {
   .buttons {
     width: 60px;
     height: 45px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 400px) {
-  .buttons {
-    width: 65px;
-    height: 65px;
   }
 }
 

@@ -29,7 +29,7 @@ html {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
   #calculator {
     width: 300px;
   }
@@ -42,7 +42,7 @@ html {
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 844px) {
+@media only screen and (orientation: landscape) and (min-width: 400px) and (max-width: 844px) {
   #calculator {
     width: 280px;
     height: 360px;

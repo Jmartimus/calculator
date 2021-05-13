@@ -1,7 +1,7 @@
-import './Calculator.css';
+import './Calculator.scss';
 import React, { useRef } from 'react';
 
-//clean up all the conditional statements - change to ternaries and case switches?
+/*change buttons to flex grid*/
 const Calculator = () => {
   let operands = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   let decimal = '.';
@@ -143,6 +143,7 @@ const Calculator = () => {
       <div id="calculator">
         <input id="display" ref={displayRef} type="text" value="0" disabled />
         <div id="calcKeys">
+          <div id="row1">
           <button
             className="all-clear buttons"
             id="clear"
@@ -157,16 +158,19 @@ const Calculator = () => {
             value="/"
             onClick={(e) => whatWasClicked(e.target.value)}
           >
-            /
+              /
           </button>
+          </div>
+          <div id="row2">
           <button
             className="operands buttons"
             id="seven"
             value="7"
             onClick={(e) => whatWasClicked(e.target.value)}
           >
-            7
+              7
           </button>
+          
           <button
             className="operands buttons"
             id="eight"
@@ -189,8 +193,10 @@ const Calculator = () => {
             value="*"
             onClick={(e) => whatWasClicked(e.target.value)}
           >
-            &times;
+              &times;
           </button>
+          </div>
+          <div id="row3">
           <button
             className="operands buttons"
             id="four"
@@ -221,8 +227,10 @@ const Calculator = () => {
             value="-"
             onClick={(e) => whatWasClicked(e.target.value)}
           >
-            -
+              -
           </button>
+          </div>
+          <div id="row4">
           <button
             className="operands buttons"
             id="one"
@@ -253,8 +261,10 @@ const Calculator = () => {
             value="+"
             onClick={(e) => whatWasClicked(e.target.value)}
           >
-            +
+              +
           </button>
+          </div>
+          <div id="row5">
           <button
             className="operands buttons"
             id="zero"
@@ -277,8 +287,9 @@ const Calculator = () => {
             value="="
             onClick={(e) => whatWasClicked(e.target.value)}
           >
-            =
+              =
           </button>
+          </div>
           <audio ref={audioRef} autoPlay="true" />
         </div>
       </div>

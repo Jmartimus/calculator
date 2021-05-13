@@ -1,7 +1,12 @@
+$mobile: 400px;
+$tablet: 800px;
+$phoneLandscape: 844px;
+$desktop: 1280px;
 $small: 200px;
 $phone: 400px;
 $responsive: 320px;
-$phoneLandscape: 844px;
+
+/*change buttons to flex grid*/
 
 html {
   background-color: gray;
@@ -21,12 +26,13 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 5px;
+  min-width: 300px;
   @media only screen and (max-width: $responsive){
     width: 300px;
     height: 490px;
       }
   @media only screen and (min-width: $responsive) and (max-width: $phone){
-    width: 300px;
+    -webkit-width: 300px;
     height: 490px;
       }
   @media only screen and (orientation: landscape) and (min-width: $phone) and (max-width: $phoneLandscape) {
@@ -51,7 +57,7 @@ html {
   font-family: 'Orbitron', sans-serif;
   text-align: right;
   border-radius: 5px;
-  color: black;
+  -webkit-text-fill-color: black;
   @media only screen and (max-width: $responsive){
     width: 269px;
     margin-bottom: -11px;
@@ -67,7 +73,26 @@ html {
     height: 70px;
     margin-bottom: -11px;
     margin-top: 12px;
+      }}
+#row1 {
+  display: flex;
+  justify-content: center;
       }
+#row2 {
+  display: flex;
+  justify-content: center;
+}
+#row3 {
+  display: flex;
+  justify-content: center;
+}
+#row4 {
+  display: flex;
+  justify-content: center;
+      }
+#row5 {
+  display: flex;
+  justify-content: center;
 }
 #zero {
   width: 156px;

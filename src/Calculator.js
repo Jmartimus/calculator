@@ -141,8 +141,10 @@ const Calculator = () => {
   return (
     <div>
       <div id="calculator">
-        <input id="display" ref={displayRef} type="text" value="0" disabled />
-        <div id="calcKeys">
+        <div id="displayContainer">
+          <input id="display" ref={displayRef} type="text" value="0" disabled />
+        </div>
+          <div id="calcKeys">
           <div id="row1">
           <button
             className="all-clear buttons"

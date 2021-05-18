@@ -1,8 +1,6 @@
-$mobile: 400px;
 $tablet: 800px;
 $phoneLandscape: 844px;
 $desktop: 1280px;
-$small: 200px;
 $phone: 400px;
 $responsive: 320px;
 
@@ -68,6 +66,7 @@ html {
   text-align: right;
   border-radius: 5px;
   -webkit-text-fill-color: black;
+
   @media only screen and (min-width: $responsive) {
     width: 269px;
     height: 100px;
